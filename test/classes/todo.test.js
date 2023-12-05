@@ -37,7 +37,7 @@ describe('Suit Todos', function () {
 
     it('debe retornar un json con los todos (async/await), status code 200', async function () {
 
-        const response = await fetch('http://localhost:3000/list');
+        const response = await fetch('http://localhost:3000/todo',{ method: 'GET' });
         expect(response.status).to.equal(200);
 
         const data = await response.json();
