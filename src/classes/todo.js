@@ -1,5 +1,5 @@
 class Todo {
-    constructor(items = ['peras', 'manzanas']) {
+    constructor(items = []) {
         this.todos = items;
     }
     add(item) {
