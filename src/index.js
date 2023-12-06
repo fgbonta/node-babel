@@ -1,10 +1,13 @@
 import express from "express";
 import "dotenv/config";
+import helmet from "helmet";
 import Todo from "./classes/todo";
 
 const app = express();
 const port = process.env.PORT || 3000;
 const todos = new Todo();
+
+app.use(helmet());
 
 app.get("/todo", (req, res) => {
   res.status(200).json({ todos: todos.list });
