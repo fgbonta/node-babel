@@ -7,8 +7,8 @@
     "start": "nodemon --exec babel-node src/index.js",
     "build": "babel src -d dist",
     "test": "mocha --require @babel/register --reporter spec --recursive test/",
-    "eslint": "npx eslint src/*",
-    "eslint-fix": "npx eslint --fix src/*"
+    "eslint": "npx eslint --ext .js src/*",
+    "eslint-fix": "npx eslint --ext .js --fix src/*"
   },
   "keywords": [],
   "author": "",
