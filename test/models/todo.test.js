@@ -1,6 +1,6 @@
 //const assert = require('assert'); // viene por defecto en node
 import { assert, expect } from 'chai';
-import Todo from '../../src/classes/todo';
+import Todo from '../../src/models/todo';
 
 describe('Suit Todos', function () {
 
